@@ -88,10 +88,10 @@ $ git push -u origin master
 ```
 
 
-Missing.
-Browserify
-AirBnB ESLinter
-Istanbul (Code Coverage)
+Missing:
+- Browserify
+- AirBnB ESLinter
+- Istanbul (Code Coverage)
 
 ## Step 3 (Build)
 
@@ -115,10 +115,13 @@ Now you’re ready to start building, you can start the dev server with the comm
 
 ### Folder Structure
 
-Keeping folder structure consistent across all JavaScript apps will greatly reduce developer ramp-up time on new projects. Therefore, follow the directory structure outline below.
+Keeping folder structure consistent across all JavaScript apps will greatly reduce developer ramp-up time on new projects.
 
-```
+We recommend using a domain based structure, i.e. complexity of directory tree grows with the application. This is accomplished by adding a new folder for a new domain (like a new route ex. 'schools/') to the app, and within that folder, any sub domains (ex. 'schools/students'). 
 
-```
+Ryan Florance outlines an ideal JS app directory structure in [this gist](https://gist.github.com/ryanflorence/daafb1e3cb8ad740b346).
 
-Commit the Lockfile.
+
+### Checking in code
+
+Commit the Lockfile. (more to come)

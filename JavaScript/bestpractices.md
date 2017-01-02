@@ -1,5 +1,7 @@
 # Javascript Best Practices
 
+Thanks to Kevin for authoring [the initial version of this document](https://github.com/koleary94/javascript-best-practices).
+
 - [Immutability](https://facebook.github.io/immutable-js/)
 - [Composition over Inheritance](https://facebook.github.io/react/docs/composition-vs-inheritance.html)
 - Unidirectional data flow / [single source of truth](http://redux.js.org/docs/introduction/Motivation.html)
