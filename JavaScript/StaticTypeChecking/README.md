@@ -49,7 +49,7 @@ This is where flow shines. Instead of `context` being ambiguous, we can define a
 
 Flow can also be added iteratively to **any** project. This is accomplished by just adding a comment to the top of the file. On top of being flexible, flow improves the quality of the codebase. The identity of a solution is presented plainly in code in a readable manner. This makes it easer for any developer unfamiliar with a part of a codebase to form a mental model of how it works in less time. Refactors will also take less time, since the majority of problems caused by refactors in the first place are type errors.
 
-There numerous types that flow exposes that help better specify data. One of these is the `maybe` type, specified by adding a `?` to a type like `?string`. This is essentially saying that the boolean can either be `null` or a `string`. It also allows for union types `string | boolean` and generics `class GenericClass<T> {...}`. There are many more types that can be found in the docs.
+There are numerous types that flow exposes that help better specify data. One of these is the `maybe` type, specified by adding a `?` to a type like `?string`. This is essentially saying that the boolean can either be `null` or a `string`. It also allows for union types `string | boolean` and generics `class GenericClass<T> {...}`. There are many more types that can be found in the docs.
 
 ## Drawbacks
 If Flow is so great, why is this just a recommendation? The foundation of types rests on Category Theory, a rather abstract and hard theoretical framework. `Nullable` and `Union` types are easy enough to understand, but certain gotchas run deep. Take this recommended React pattern.
@@ -63,19 +63,19 @@ class BindingExample extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            mySafeSpace: true
+            active: true
         }
 
-        this.onTriggered = this.onTriggered.bind(this);
+        this.onToggle = this.onToggle.bind(this);
     }
 
-    onTriggered() {
-        this.setState{(mySafeSpace: false)};
+    onToggle() {
+        this.setState{(active: false)};
     }
 
     render() {
         return (
-            <button onClick={this.onTriggered}>
+            <button onClick={this.onToggle}>
                 {this.props.text}
             </button>
         );
@@ -98,19 +98,19 @@ class BindingExample extends React.Component {
     constructor(props: Props) {
         super(props);
         this.state = {
-            mySafeSpace: true
+            active: true
         }
 
-        (this:any).onTriggered = this.onTriggered.bind(this);
+        (this:any).onToggle = this.onToggle.bind(this);
     }
 
-    onTriggered() {
-        this.setState{(mySafeSpace: false)};
+    onToggle() {
+        this.setState{(active: false)};
     }
 
     render() {
         return (
-            <button onClick={this.onTriggered}>
+            <button onClick={this.onToggle}>
                 {this.props.text}
             </button>
         );
@@ -125,4 +125,4 @@ Once you start introducing paradigms like Higher Order Components (in React) you
 
 ## Conclusion
 
-Flow is a new kid on the block. There are new pull requests being opened constantly which are fixing ailments like the one just mentioned. An application - even when perfectly and specifically typed - can still fail when used with third party libraries. There are typings for popular libraries like React, but there is not a type safety guarantee when your application calls upon methods and apis from libraries without set types. You can create those yourself, but the tradeoff is that it takes time. However, there are immense benefits to making the application structure better defined with more contractual agreements.
+Flow is a new kid on the block. There are new pull requests being opened constantly which are fixing ailments like the one just mentioned. An application - even when perfectly and specifically typed - can still fail when used with third party libraries. There are typings for popular libraries like React [built in](http://www.saltycrane.com/blog/2016/06/flow-type-cheat-sheet/), but there is not a type safety guarantee when your application calls upon methods and apis from libraries without set types. You can create those yourself, but the tradeoff is that it takes time. However, there are immense benefits to making the application structure better defined with more contractual agreements.
