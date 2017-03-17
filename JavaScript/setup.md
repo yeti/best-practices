@@ -2,7 +2,7 @@
 
 This guide will help you set up a new JavaScript project that:
 
-- Is meant to be a f/e client - not a full fledged web application, no database, and not a lot of server logic.
+- Is meant to be a f/e client - not a full fledged web application, no database, and no server logic.
 - Redux to manages the User/Application State, and is the single-source of truth of app state.
 - Supports Unit and Acceptance Testing out of the box.
 - Stops most bugs in the IDE, before code is compiled, increasing Developer efficiency.
@@ -51,7 +51,7 @@ Now, let’s start a project with the above tools.
 
 `$ node -v` should print v.4.3.0 or higher
 `$ npm -v` should print v.2.14.10 or higher
-`$ yarn --version` should print v. or higher
+`$ yarn --version` should print v.0.17 or higher
 
 If these fail, please see [Requirements](requirements.md).
 
@@ -88,9 +88,36 @@ $ git push -u origin master
 ```
 
 
-Missing:
+#### Adding a linter
+
+Using a Linter will greatly reduce runtime and syntax errors while you are in the IDE. Atom and Webstorm have linter integrations, which should be installed and enabled. But in addition to that, we'll also need to choose and install a linter.
+
+[AirBnB's linter](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) is the recommended linter.  See the readme on github, or if using yarn, run the command
+
+```sh
+(
+  export PKG=eslint-config-airbnb;
+  npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add "$PKG@latest" --dev
+)
+```
+
+Which gets all the peerdependencies for the linter via `npm` and installs them via `yarn`.
+
+Next, create a file called `.eslintrc.json` and drop in:
+
+```JSON
+{
+    "extends": "airbnb"
+}
+```
+
+Don't stop there! As soon as your IDE starts listing files, make sure you think about each and every warning and error. If something doesn't work for your project, feel free to ignore or modify the issue in your `.eslintrc.json`. Just make sure to discuss with your team first, or make sure team members get the chance to provide feedback in a PR. It's highly recommended that everyone on the team use the same linter rules.
+
+#### What's next?
+
+Still to add:
+
 - Browserify
-- AirBnB ESLinter
 - Istanbul (Code Coverage)
 
 ## Step 3 (Build)
