@@ -101,7 +101,7 @@ Using a Linter will greatly reduce runtime and syntax errors while you are in th
 )
 ```
 
-Which gets all the peerdependencies for the linter via `npm` and installs them via `yarn`.
+Which gets all the peer dependencies for the linter via `npm` and installs them via `yarn`.
 
 Next, create a file called `.eslintrc.json` and drop in:
 
@@ -111,7 +111,7 @@ Next, create a file called `.eslintrc.json` and drop in:
 }
 ```
 
-Don't stop there! As soon as your IDE starts listing files, make sure you think about each and every warning and error. If something doesn't work for your project, feel free to ignore or modify the issue in your `.eslintrc.json`. Just make sure to discuss with your team first, or make sure team members get the chance to provide feedback in a PR. It's highly recommended that everyone on the team use the same linter rules.
+Don't stop there! As soon as your IDE starts linting files, make sure you think about each and every warning and error. If something doesn't work for your project, feel free to ignore or modify the issue in your `.eslintrc.json`. Just make sure to discuss with your team first, or make sure team members get the chance to provide feedback in a PR. It's highly recommended that everyone on the team use the same linter rules.
 
 #### What's next?
 
