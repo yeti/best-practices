@@ -42,3 +42,7 @@ Thanks to Kevin for authoring [the initial version of this document](https://git
 
 [Async Programming in ES7](https://www.youtube.com/watch?v=lil4YCCXRYc&t=2s&index=16&list=LLyC_vdEIR5HdKQy6p4Nh9nw)
 
+### Further Reading
+
+- [Why do we use browserify + NPM](https://www.leanpanda.com/blog/2015/06/28/amd-requirejs-commonjs-browserify/)?
+- [Webpack vs Browserify](https://gist.github.com/substack/68f8d502be42d5cd4942).
