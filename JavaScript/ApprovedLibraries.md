@@ -50,7 +50,7 @@ CSS in JS solution that is similar to react native styling
 ## Animation
 **[react-spring](https://github.com/drcmda/react-spring)**
 
-Animation library with nice built ins that combines a declarative api with interopibility
+Animation library with nice built ins that combines a declarative api with interoperability
 
 **[react-spinkit](https://github.com/KyleAMathews/react-spinkit)**
 
