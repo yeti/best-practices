@@ -3,6 +3,9 @@
 
 ## Front End
 
+##### Yeti Approved Libraries
+[link to readme](JavaScript/ApprovedLibraries.md)
+
 ### Best Practices in Action
 ##### Requirements
 [link to readme](JavaScript/requirements.md)
