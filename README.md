@@ -3,6 +3,9 @@
 
 ## Front End
 
+##### Front End Testing Philosophy
+[link to readme](JavaScript/testing.md)
+
 ##### Yeti Approved Libraries
 [link to readme](JavaScript/ApprovedLibraries.md)
 
