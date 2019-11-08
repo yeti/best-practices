@@ -10,8 +10,8 @@ Bugs come in many shapes and sizes. But in actuality, bugs can be broken down in
   - [Table of Contents](#Table-of-Contents)
   - [Bug Types](#Bug-Types)
   - [Testing Methodologies](#Testing-Methodologies)
-    - [Testing for Style Bugs](#Testing-for-Style-Bugs)
-    - [Testing for Business Requirements](#Testing-for-Business-Requirements)
+    - [Testing for and Preventing Style Bugs](#Testing-for-and-Preventing-Style-Bugs)
+    - [Testing for and Preventing Business Logic Bugs](#Testing-for-and-Preventing-Business-Logic-Bugs)
     - [Testing for Data Flow](#Testing-for-Data-Flow)
     - [Testing for Accidental Code Changes](#Testing-for-Accidental-Code-Changes)
   - [Testing in Summary](#Testing-in-Summary)
@@ -20,19 +20,19 @@ Bugs come in many shapes and sizes. But in actuality, bugs can be broken down in
 
 ## Bug Types
 
-**1. Style bugs**
+**1. Style /UI Bugs**
 
 When an implementation of a design does not match the design itself, it is a style bug. In mobile development, this usually happens when a certain screen size is not accounted for or when elements are not aligned properly. This also happens when developers need to interpret how designs should change when the screen size increases or decreases.
 
-**2. Business Requirements**
+**2. Business Logic Bugs**
 
 When a flow is implemented, it usually determined by the requirements on the ticket itself. Sometimes these requirements are not explicitly written down or not followed to a T.
 
-**3. Data Flow**
+**3. Data Flow Bugs**
 
 Coding is really just manipulating data. And on the front end, it's mostly just manipulating data that we either get from the backend or manipulating data structures that we create and store ourselves. Certain data problems that are fairly common are trying to manipulate data that is actually not the type we expect and trying to operate on data that is not defined.
 
-**4. Accidental Code Changes**
+**4. Development Artifact Bugs**
 
 Little hiccups get by us and others reviewing our code. We add a console.log or debugger, or even just change one line elsewhere in the application to make our local development easier and it somehow makes its way into production.
 
@@ -46,7 +46,7 @@ Let's take a step back and look at what bugs we're trying to solve and prevent.
 
 <a name="testing-for-style-bugs"></a>
 
-### Testing for Style Bugs
+### Testing for and Preventing Style Bugs
 
 There are a few ways we can address style bugs.
 
@@ -54,7 +54,7 @@ There are a few ways we can address style bugs.
 
 Automated visual testing is possible, but it is definitely difficult and costly. There are products out there that will run and build your tests, click on elements, and make sure that the screenshots that are taken match previous screenshots. This is usually very helpful for regressions, but not for seeing if implementations match designs to spec.
 
-**2. Manual Through a Person**
+**2. Manual Smoke Screen Testing**
 
 In a typical review process, the code and its subsequent implementation go through a few different hands. One important thing we can do is make sure that it gets approval by either a designer or someone with design thinking a keen sense of whitespace and type. This is typically lower cost and less upkeep. If added as a part of the review process before code is even reviewed, it can act as a great means of QA, since design can let development know that there are style bugs / inconsistencies before it is even merged. Another person that can act as an enforcer here is the other developer reviewing the code. We can make it mandatory that the developer pull the branch down, interact with it, and ensure that the style meets that of the design.
 
@@ -72,7 +72,7 @@ Due to time and budgetary constraints, not all 4 of these are always possible. H
 
 <a name="testing-for-business-requirements"></a>
 
-### Testing for Business Requirements
+### Testing for and Preventing Business Logic Bugs
 
 The most important piece of this puzzle is the Product Manager. Writing explicit requirements that are approved by stakeholders is paramount to prevent these 'bugs'. When requirements change and more scope is added, these 'bugs' are really additional feature requirements, and should be treated as such.
 
