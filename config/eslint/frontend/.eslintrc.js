@@ -6,14 +6,13 @@ module.exports = {
   },
   extends: [
     "plugin:styled-components-a11y/recommended",
-    "plugin:prettier/recommended",
     "react-app",
     "eslint:recommended",
     "plugin:react/recommended",
-    "cypress"
+    "plugin:prettier/recommended",
   ],
   globals: {},
-  plugins: ["react", "react-hooks", "@emotion", "jest"],
+  plugins: ["react", "react-hooks", "@emotion", "jest", "jsx-a11y"],
   rules: {
     "react/jsx-filename-extension": 0,
     "react/jsx-one-expression-per-line": 0,
@@ -26,7 +25,7 @@ module.exports = {
     "react/react-in-jsx-scope": 0,
     "react-hooks/exhaustive-deps": 0,
     "@emotion/syntax-preference": [2, "object"],
-    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/no-static-element-interactions": 1,
     "react/require-default-props": "off",
     "no-nested-ternary": "off",
     "prettier/prettier": 1,
