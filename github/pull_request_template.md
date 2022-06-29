@@ -7,3 +7,7 @@
 ## Changes
 
 - Declarative list of changes made to the app
+
+## Visuals
+
+## (Optional) Notes
