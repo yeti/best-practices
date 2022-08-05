@@ -22,7 +22,7 @@ This document addresses common questions that come up when you are ready to crea
 
 ## How should I organize or break up my PRs?
 
-Different developers may have different preferences for this. In general, it's a good idea to group the contents of a PR into a set of changes that will achieve a specific verifiable functionality. This allows the reviewer better understand how things are working since all the changes that depend on each other are submitted together. This only holds to a certain point - if the diff becomes very large, you should consider breaking it up into more manageable pieces.
+Different developers may have different preferences for this. In general, it's a good idea to group the contents of a PR into a set of changes that will achieve a specific verifiable functionality. This allows the reviewer to better understand how things are working since all of the changes that depend on each other are submitted together. This only holds to a certain point - if the diff becomes very large, you should consider breaking it up into more manageable pieces.
 
 ## Who should I tag as a reviewer?
 
@@ -34,4 +34,4 @@ In most cases, it's best to allow a reviewer up to 24 hours to approve your work
 
 ## What if I need to keep working off of my changes before they are approved?
 
-We recommend to create a new branch off of the previous one that is still in review. If you are ready to submit another PR before the previous branch is merged, open your PR against the previous branch. The idea here is that the diff is what is important to the reviewer. It's more difficult to review code that contains new changes as well as others that were already submitted separately.
+We recommend to create a new branch off of the previous one that is still in review. If you are ready to submit another PR before the previous branch is merged, open your PR against the previous branch. The idea here is that the diff is what is important to the reviewer. It's more difficult to review code that contains new changes as well as others that were already reviewed separately.
