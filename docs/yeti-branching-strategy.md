@@ -16,6 +16,12 @@ The `develop` branch is configured to automatically deploy to the staging enviro
 
 The `main` branch is configured to automatically deploy to the production environment, and should only contain merge commits from `develop` and any urgent production `hotfix` commits.  
 
+When merging changes into `develop` we should always use the "squash and merge" option.  
+
+This holds for all changes, unless the branch you are merging is a long-lived feature branch containing several PRs. In this case rebasing onto `develop` is more appropriate. We want to preserve the PR history of all changes going into `develop`, which we would lose if we were to squash in such a situation.
+
+When merging changes into `main` we should always use the "merge" option, in order to preserve the PR history on the `develop` branch.  
+
 ## How Do We Create Feature Branches?
 
 We create feature branches off of the `develop` branch.  
