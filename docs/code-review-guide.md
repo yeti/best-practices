@@ -16,6 +16,8 @@ Regarding whether to request changes or to approve with feedback, we suggest tha
 
 First and foremost, does this work as expected? The PR should contain visuals demonstrating that it works and looks as expected whenever applicable.
 
+If the changes are significant and you are involved in the development for the project, it's encouraged to pull down the changes and try running it locally when possible.
+
 **2. Red Flags**
 
 If there is anything in the changes that could lead to significant issues in the future, they should be addressed and fixed.
