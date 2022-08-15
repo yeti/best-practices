@@ -6,7 +6,7 @@ This document addresses common questions that come up when you are ready to crea
 
 **Ticket**
 
-- Provide a link to the work ticket so that the reviewer can easily see the task requirements.
+- Provide a link to the relevant ticket so that the reviewer can easily see the task requirements.
 
 **Changes**
 
