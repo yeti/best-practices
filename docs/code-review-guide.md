@@ -26,7 +26,11 @@ Is there a better way to implement this functionality? It's important to think a
 
 **4. Simplicity & Readability**
 
-Is the code easy to read and understand? It's important to always think about the potential for new developers that may join later and how quickly they'll be able to contribute.
+Is the code easy to read and understand? Could a developer who is unfamiliar with the codebase quickly understand what your code does?   
+
+It's important to always think about the potential for new developers that may join later and how quickly they'll be able to contribute.  
+
+One way to think about this: the collection of names in our code should create a vocabulary for talking about the code. If the vocabulary is confusing or inconsistent, then maintaining and changing the code will be more difficult.  
 
 **5. Teaching Opportunity**
 
