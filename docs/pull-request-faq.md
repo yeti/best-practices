@@ -24,6 +24,8 @@ This document addresses common questions that come up when you are ready to crea
 
 Different developers may have different preferences for this. In general, it's a good idea to group the contents of a PR into a set of changes that will achieve a specific verifiable functionality. This allows the reviewer to better understand how things are working since all of the changes that depend on each other are submitted together. This only holds to a certain point - if the diff becomes very large, you should consider breaking it up into more manageable pieces.
 
+Note that it's best to create a separate PR if you are moving files, refactoring, updating syntax or making other changes that aren't directly tied to new UI or logic changes.
+
 ## Who should I tag as a reviewer?
 
 For smaller projects, it's typically best to include all developers that are working in the repository. This is so that each person has visibility into other parts of the application that could affect their work directly or indirectly. If you are working on a project as a solo developer, you should arrange in advance to have another Yeti team member added to the repo who can provide at minimum a sanity check on your changes and preferably add useful feedback.
