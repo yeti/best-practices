@@ -26,6 +26,8 @@ Different developers may have different preferences for this. In general, it's a
 
 Note that it's best to create a separate PR if you are moving files, refactoring, updating syntax or making other changes that aren't directly tied to new UI or logic changes.
 
+If your work is not yet complete, but you would like to get feedback on what is done so far, mark the PR as a DRAFT. This way the reviewer will know that you aren't looking to merge the changes yet.
+
 ## Who should I tag as a reviewer?
 
 For smaller projects, it's typically best to include all developers that are working in the repository. This is so that each person has visibility into other parts of the application that could affect their work directly or indirectly. If you are working on a project as a solo developer, you should arrange in advance to have another Yeti team member added to the repo who can provide at minimum a sanity check on your changes and preferably add useful feedback.
