@@ -30,7 +30,7 @@ For smaller projects, it's typically best to include all developers that are wor
 
 ## How long should I wait for a review?
 
-In most cases, it's best to allow a reviewer up to 24 hours to approve your work. If you have multiple reviewers on a PR, there should be a designated person, usually the tech lead for the project, who's review is required. If the lead developer approves your changes, it's assumed that you can go ahead with the merge.
+In most cases, it's best to allow a reviewer up to 24 hours to approve your work. You should check with the tech lead and/or project manager for when it is okay to merge your code.
 
 ## What if I need to keep working off of my changes before they are approved?
 
