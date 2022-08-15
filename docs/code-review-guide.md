@@ -10,7 +10,7 @@ We always aim to deliver a high-quality product to our clients. Code reviews are
 
 While code review mainly deals with product quality, it's also important that we deliver the product in a timely fashion. For this reason, reviewers should exercise their judgement on how to best prioritize the various considerations during review.
 
-Regarding whether to request changes or to approve with feedback, we suggest that you request changes if items 1-2 are not satisfied. Otherwise, it is up to the reviewer. Keep in mind that if you approve with feedback, you are essentially leaving it up to the submitter whether and when to incorporate your suggestions.
+Regarding whether to request changes or to approve with feedback, we suggest that you request changes if items 1-2 are not satisfied. Otherwise, it is up to the reviewer. Keep in mind that if you approve with feedback, you are essentially leaving it up to the submitter whether and when to incorporate your suggestions. Another option is to leave comments without approving if you'd like the author to answer some questions before you request changes or approve.
 
 **1. Working Code & Requirements Satisfied**
 
