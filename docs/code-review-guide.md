@@ -1,10 +1,10 @@
 # Yeti Code Review Guide
 
-This document is intended to be a reference for Yeti developers from the perspective of both the code reviewer and the person submitting code. We understand that there may be strong personal preferences on this topic, so please treat this document as a set of guidelines to follow rather than a strict set of rules.
+This document is intended to be a reference for Yeti developers from the perspective of the code reviewer. We understand that there may be strong personal preferences on this topic, so please treat this document as a set of guidelines to follow rather than a strict set of rules.
 
 ## Purpose of Code Review
 
-We always aim to deliver a high-quality product to our clients. Code reviews are a critical part of this process. Having our work reviewed by peers and superiors ensures that we maintain accountability amongst the team and this ultimately drives client satisfaction.
+We always aim to deliver a high-quality product to our clients. Code reviews are a critical part of this process. Having our work reviewed by peers ensures that we maintain accountability amongst the team and this ultimately drives client satisfaction.
 
 ## Priorities for Code Reviewers
 
