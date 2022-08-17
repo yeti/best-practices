@@ -14,7 +14,7 @@ The modules folder is used to logically and thematically separate parts of the a
 
 #### Why modules instead of screens?
 
-Our thinking here is that if we can create a fs-strucuture that is logically and themaptically compartmentalized, it will be easier for new developers to onboard and navigate the throughout project. A flatter approach may leave a developer searching for longer than necessary if there is nothing pointing them in the right direction.
+Our thinking here is that if we can create a filesystem structure that is logically and thematically compartmentalized, it will be easier for new developers to onboard and navigate throughout the project. A flatter approach may leave a developer searching for longer than necessary if there is nothing pointing them in the right direction.
 
 ### Services
 
