@@ -4,7 +4,7 @@ This document describes Yeti's preferred strategy for organizing our React files
 
 The exact pattern will vary from project to project, but this is what we do when the choice is up to us.
 
-See examples of our fs-structure [here](../react-fs-structure)
+See examples of our filesystem structure [here](../react-fs-structure)
 
 ## High Level Structure
 
