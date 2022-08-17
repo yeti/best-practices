@@ -18,7 +18,7 @@ Our thinking here is that if we can create a filesystem structure that is logica
 
 ### Services
 
-The `Services` folder is reserved for JS classes that provide utility in a thematically similar way. An example would be an HTTP service that handles all types of HTTP requests within the app.
+The `Services` folder is reserved for JS classes that provide utility in a thematically similar way. An example would be an HTTP service that wraps all types of HTTP requests within the app.
 
 ### Shared
 
