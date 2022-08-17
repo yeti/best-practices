@@ -1,6 +1,6 @@
 # Yeti React File System Structure
 
-This document describes Yeti's preferred strategy for organizing our react fs-structure.
+This document describes Yeti's preferred strategy for organizing our React filesystem structure.
 
 The exact pattern will vary from project to project, but this is what we do when the choice is up to us.
 
