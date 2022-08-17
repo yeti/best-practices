@@ -35,4 +35,4 @@ The `Static` folder is intended for static files such as:
 
 ## Tests
 
-While we currently don't have an established pattern for how we would like to write tests, we are currently suggesting that you colocate test files next to the file they're testing (e.g. utils.test.ts living right next to utils.ts).
+While we currently don't have an established pattern for how we would like to write tests, our current suggestion is to colocate test files next to the file they're testing (e.g. utils.test.ts living right next to utils.ts).
