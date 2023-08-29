@@ -48,8 +48,6 @@ Integration tests verify the behavior and interactions of multiple components or
 
 **[Supertest](https://github.com/ladjs/supertest)** is a library for testing HTTP requests in Node.js applications. It allows making requests against your Express/Fastify/Koa app and asserting expectations on the response. Supertest works well for integration testing endpoints and APIs.
 
-**[Supertest](https://github.com/ladjs/supertest)** is a library for testing HTTP requests in Node.js applications. It allows making requests against your Express/Fastify/Koa app and asserting expectations on the response. Supertest works well for integration testing endpoints and APIs.
-
 ## End to End (e2e) Tests
 
 End to end tests simulate real user interactions with the application, often using a browser, to validate that the application works as expected.  
