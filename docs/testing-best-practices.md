@@ -2,6 +2,10 @@
 
 This document is meant to serve as a guide to Yeti's approach to automated testing and outlines some best practices for implementing effective automated tests.
 
+## What are Automated Tests?
+
+Automated testing is the process of using software to exercise/test code. This is in contrast with manual testing, where a user uses a browser or other tool to manually verify software behavior.
+
 ## Why Write Tests?
 
 Yeti often works on projects that are prototypes, "greenfield," or in the early stages of development. In such cases, it may be tempting to forgo writing tests due to the feeling that it requires additional effort. However, writing tests can offer numerous benefits, even in these scenarios. It's worth considering the following factors when deciding whether to write tests for a project:
@@ -14,19 +18,23 @@ Yeti often works on projects that are prototypes, "greenfield," or in the early 
 
 It is important to note that the specific costs and benefits of automated testing will vary depending on the project and its requirements. However, in general, adopting a comprehensive testing approach can significantly improve the quality and reliability of applications.
 
-## What are Automated Tests?
-
-Automated testing is the process of using software to exercise/test code. This is in contrast with manual testing, where a user uses a browser or other tool to manually verify software behavior.
-
-- Increase confidence that your software does what you think
-- Automatically catch regressions -- breaking existing features -- when building or maintaining a system
-- Communicate expected behavior of a system by giving examples of expected behavior
-- Make it easier to identify and exercise corner cases that could be difficult to test manually
-- All of these tend to lead to an overall increase in software quality. -- **Is there a source that supports this?**
-
 ## Unit Tests
 
 Unit tests focus on testing individual "units" of code, such as functions or components, in isolation. These tests should have minimal dependencies and verify that given a specific input, the expected output is produced. Unit tests are essential for validating the correctness of small, self-contained code units.
+
+### Unit Testing Tools
+
+**[Jest](https://jestjs.io/)** is a popular JavaScript testing framework maintained by Facebook. It works well for unit testing React components and other JavaScript/TypeScript code. Some key features include:
+
+- Automatic mock generation for modules
+- Built-in assertion libraries like expect()
+- Easy to setup and run tests
+
+**[Vitest](https://vitest.dev/)** is another popular JavaScript unit testing framework in the Vite ecosystem. It aims to be very fast and lightweight. Some key features include:
+
+- Built for modern JavaScript/TypeScript
+- Near-instant feedback while developing
+- Tight integration with Vite
 
 ## Integration Tests
 
@@ -34,11 +42,18 @@ Tests that exercise a larger "slice" of an application, testing how several piec
 
 Integration tests verify the behavior and interactions of multiple components or modules within an application. These tests ensure that the integrated system functions correctly when different components work together. Integration tests help identify issues that may arise due to the integration of various modules.
 
+### Integration Testing Tools
+
+**[MSW (mock-service-worker)](https://mswjs.io/)** is a popular library for mocking network requests in integration tests. It allows simulating API responses, delays, errors, and other conditions to test how your code behaves under different scenarios.
+
+**[Supertest](https://github.com/ladjs/supertest)** is a library for testing HTTP requests in Node.js applications. It allows making requests against your Express/Fastify/Koa app and asserting expectations on the response. Supertest works well for integration testing endpoints and APIs.
+
+**[Supertest](https://github.com/ladjs/supertest)** is a library for testing HTTP requests in Node.js applications. It allows making requests against your Express/Fastify/Koa app and asserting expectations on the response. Supertest works well for integration testing endpoints and APIs.
+
 ## End to End (e2e) Tests
 
-Tests that exercise the system as a whole **from the perspective of the end user**. These tests often use a browser to interact with an application with the same interface that a user sees. These tests tend to be the most time-consuming, but can give a high level of confidence that a system is working as expected (at least for the features that the e2e test is focused on).
-
-End-to-end tests provide a comprehensive evaluation of the entire system from the perspective of the end user. These tests simulate real user interactions with the application, often using a browser or some other user interface, to validate that the application works as expected. While e2e tests tend to be more time-consuming to implement and execute, they provide a high level of confidence in the overall functionality of the system.
+End to end tests simulate real user interactions with the application, often using a browser, to validate that the application works as expected.  
+While e2e tests tend to be more time-consuming to implement and execute, they provide a high level of confidence in the overall functionality of the system.
 
 Examples of scenarios that are typically worth writing e2e tests for include:
 
@@ -50,4 +65,13 @@ Examples of scenarios that are typically worth writing e2e tests for include:
 
 By covering these critical paths, e2e tests help ensure that the most important features and user interactions are thoroughly tested and dependable.
 
-Implementing a combination of these different types of tests can provide a comprehensive testing strategy, enabling developers to catch issues early in the development process and deliver high-quality software to end users.
+Implementing a combination of these different types of tests can provide a comprehensive testing strategy, helping to catch issues early in the development process and deliver high-quality software to end users.
+
+### End to End Testing Tools
+
+#### Web
+
+[Cypress](https://docs.cypress.io/guides/overview/why-cypress)  
+[Playwright](https://playwright.dev/)
+
+#### Mobile
