@@ -1,6 +1,6 @@
 # Yeti Testing Best Practices
 
-This document is meant to serve as a guide to Yeti's approach to automated testing and outlines some best practices for implementing effective automated tests.
+This document is meant to serve as a guide to Yeti's approach to automated testing and outlines some best practices for implementing effective automated tests, as well as the tools we use for automated testing.
 
 ## What are Automated Tests?
 
