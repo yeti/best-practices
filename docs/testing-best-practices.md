@@ -76,11 +76,11 @@ Implementing a combination of these different types of tests can provide a compr
 
 [Detox](https://wix.github.io/Detox/)
 
-## Mobile App Testing
+## Mobile App Testing Considerations
 
 While the general goals in automated testing are the same for mobile apps, projects would often need to use specialized tools to conduct tests. Mobile specific testing tools for integration tests and end to end tests requires a mobile device simulator to create a suitable testing environment. Because of this, mobile testing tends to be more time-consuming, and more resource intensive to execute.
 
-Yeti has setup end to end testing in some mobile projects, however, it is still a work in progress due to constraints related to automated remote testing. Further end to end tests with mobile will need further research and experimentation using these platforms:
+Yeti has setup end to end testing in some mobile projects, however, it is still a work in progress due to constraints related to automated remote testing in CI. Further end to end tests with mobile will need more research and experimentation using these platforms:
 
 [Github Actions](https://github.com/features/actions)
 
