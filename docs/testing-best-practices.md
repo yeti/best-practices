@@ -80,8 +80,28 @@ Implementing a combination of these different types of tests can provide a compr
 
 While the general goals in automated testing are the same for mobile apps, projects would often need to use specialized tools to conduct tests. Mobile specific testing tools for integration tests and end to end tests requires a mobile device simulator to create a suitable testing environment. Because of this, mobile testing tends to be more time-consuming, and more resource intensive to execute.
 
-Yeti has setup end to end testing in some mobile project, however, it is still a work in progress due to constraints related to automated remote testing. Further end to end tests with mobile will need further research and experimentation using these platforms:
+Yeti has setup end to end testing in some mobile projects, however, it is still a work in progress due to constraints related to automated remote testing. Further end to end tests with mobile will need further research and experimentation using these platforms:
 
 [Github Actions](https://github.com/features/actions)
 
 [CircleCI](https://circleci.com/)
+
+## When Should You Write Tests?
+
+First, let's acknowledge that the answer to this question is complicated, and will usually depend on the specifics of an individual codebase.
+
+Given that, here are some situations where you should, in general, cover your logic with automated tests.
+
+In general, you _should_ write unit tests when:
+
+- You're handling date manipulation logic.
+- You're handling string manipulation logic.
+- You're doing any custom logic that doesn't depend on a third-party API (library or external service).
+
+In general, you _should_ write integration tests when:
+
+- TODO
+
+In general, you _should_ write end-to-end tests when:
+
+- TODO
