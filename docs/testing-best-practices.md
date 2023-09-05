@@ -97,6 +97,7 @@ In general, you _should_ write unit tests when:
 - You're handling date manipulation logic.
 - You're handling string manipulation logic.
 - You're doing any custom logic that doesn't depend on a third-party API (library or external service).
+- You're doing any complex or confusing math.
 
 In general, you _should_ write integration tests when:
 
